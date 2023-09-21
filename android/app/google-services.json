@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "914418640627",
+    "firebase_url": "https://aitekcloud-default-rtdb.firebaseio.com",
+    "project_id": "aitekcloud",
+    "storage_bucket": "aitekcloud.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914418640627:android:cb8acd34f9b5261406f986",
+        "android_client_info": {
+          "package_name": "com.iamconnectingtotheworld.ai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "914418640627-nsa1clvsdrdttd0puplk03guin9eei20.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iamconnectingtotheworld.ai",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "914418640627-4k2u5nf1trfueb7fhs6pthf1mkb9kqfp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYlHso7hXgFgc_KuaCSKzi_STfoT3vv80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "914418640627-4k2u5nf1trfueb7fhs6pthf1mkb9kqfp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "914418640627-crvf6bf2740jc4i6og0c7l6hh55fn0q6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.iamconnectingtotheworld.ai"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

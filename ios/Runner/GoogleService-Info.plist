@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>914418640627-crvf6bf2740jc4i6og0c7l6hh55fn0q6.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.914418640627-crvf6bf2740jc4i6og0c7l6hh55fn0q6</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>914418640627-nsa1clvsdrdttd0puplk03guin9eei20.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAh53d1U0xOlJIpHLZ1aCZmoSu9yD3MCF4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>914418640627</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.iamconnectingtotheworld.ai</string>
+	<key>PROJECT_ID</key>
+	<string>aitekcloud</string>
+	<key>STORAGE_BUCKET</key>
+	<string>aitekcloud.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:914418640627:ios:f01ec3a6ce21e79006f986</string>
+	<key>DATABASE_URL</key>
+	<string>https://aitekcloud-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
