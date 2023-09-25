@@ -174,7 +174,7 @@ class _NavBarPageState extends State<NavBarPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.home,
+              Icons.home_filled,
               size: 24.0,
             ),
             label: '__',

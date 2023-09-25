@@ -5,7 +5,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -188,8 +187,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                 ),
                                 child: AuthUserStreamWidget(
                                   builder: (context) => Container(
-                                    width: 35.0,
-                                    height: 35.0,
+                                    width: 40.0,
+                                    height: 40.0,
                                     clipBehavior: Clip.antiAlias,
                                     decoration: BoxDecoration(
                                       shape: BoxShape.circle,
@@ -323,25 +322,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                             alignment: AlignmentDirectional(
                                                 0.00, 0.00),
                                             child: Hero(
-                                              tag: valueOrDefault<String>(
-                                                listViewMobileAppsRow.logo,
-                                                'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/onboarding-6zzu3j/assets/leddn42ea3wp/Default_imagine_logo_mobile_app_AIconnect_a_Artificial_Intelli_1_7459ac8a-637e-4df8-ac6c-15cae9cd7b7b_0_(1).png' +
-                                                    '$listViewIndex',
-                                              ),
+                                              tag: listViewMobileAppsRow.logo!,
                                               transitionOnUserGestures: true,
                                               child: ClipRRect(
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
-                                                child: CachedNetworkImage(
-                                                  fadeInDuration: Duration(
-                                                      milliseconds: 500),
-                                                  fadeOutDuration: Duration(
-                                                      milliseconds: 500),
-                                                  imageUrl:
-                                                      valueOrDefault<String>(
-                                                    listViewMobileAppsRow.logo,
-                                                    'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/onboarding-6zzu3j/assets/leddn42ea3wp/Default_imagine_logo_mobile_app_AIconnect_a_Artificial_Intelli_1_7459ac8a-637e-4df8-ac6c-15cae9cd7b7b_0_(1).png',
-                                                  ),
+                                                child: Image.network(
+                                                  listViewMobileAppsRow.logo!,
                                                   width: 83.0,
                                                   height: 83.0,
                                                   fit: BoxFit.cover,
