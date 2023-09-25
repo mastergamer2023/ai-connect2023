@@ -113,7 +113,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   .override(
                                     fontFamily: FlutterFlowTheme.of(context)
                                         .headlineMediumFamily,
-                                    fontSize: 20.0,
+                                    fontSize: 16.0,
                                     useGoogleFonts: GoogleFonts.asMap()
                                         .containsKey(
                                             FlutterFlowTheme.of(context)
@@ -229,7 +229,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                     color: FlutterFlowTheme.of(context).primaryBackground,
                   ),
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 5.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 0.0, 5.0),
                     child: FutureBuilder<List<MobileAppsRow>>(
                       future: MobileAppsTable().queryRows(
                         queryFn: (q) => q.eq(
@@ -265,7 +265,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                 listViewMobileAppsRowList[listViewIndex];
                             return Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
-                                  16.0, 8.0, 0.0, 8.0),
+                                  10.0, 8.0, 0.0, 8.0),
                               child: InkWell(
                                 splashColor: Colors.transparent,
                                 focusColor: Colors.transparent,
@@ -293,7 +293,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     borderRadius: BorderRadius.circular(12.0),
                                   ),
                                   child: Container(
-                                    width: 110.0,
+                                    width: 114.0,
                                     height: 0.0,
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
