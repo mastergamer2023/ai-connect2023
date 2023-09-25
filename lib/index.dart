@@ -18,9 +18,7 @@ export '/listo_affiliates/listo_affiliates_widget.dart'
     show ListoAffiliatesWidget;
 export '/profile_details/profile_details_widget.dart' show ProfileDetailsWidget;
 export '/subscription/subscription_widget.dart' show SubscriptionWidget;
-export '/blockchain/blockchain_widget.dart' show BlockchainWidget;
-export '/kiara/kiara_widget.dart' show KiaraWidget;
 export '/ai_shop/ai_shop_widget.dart' show AiShopWidget;
 export '/listo_level1/listo_level1_widget.dart' show ListoLevel1Widget;
-export '/home15_travel/home15_travel_widget.dart' show Home15TravelWidget;
 export '/upload/upload_widget.dart' show UploadWidget;
+export '/dashboard_copy/dashboard_copy_widget.dart' show DashboardCopyWidget;

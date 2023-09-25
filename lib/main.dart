@@ -133,10 +133,9 @@ class _NavBarPageState extends State<NavBarPage> {
   @override
   Widget build(BuildContext context) {
     final tabs = {
-      'Dashboard': DashboardWidget(),
-      'ListoAffiliates': ListoAffiliatesWidget(),
       'HomePage': HomePageWidget(),
       'aiShop': AiShopWidget(),
+      'DashboardCopy': DashboardCopyWidget(),
       'profilePage': ProfilePageWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
@@ -157,22 +156,6 @@ class _NavBarPageState extends State<NavBarPage> {
         type: BottomNavigationBarType.fixed,
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: FaIcon(
-              FontAwesomeIcons.wallet,
-              size: 20.0,
-            ),
-            label: '__',
-            tooltip: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.groups_sharp,
-              size: 24.0,
-            ),
-            label: '__',
-            tooltip: '',
-          ),
-          BottomNavigationBarItem(
             icon: Icon(
               Icons.home_filled,
               size: 24.0,
@@ -184,6 +167,14 @@ class _NavBarPageState extends State<NavBarPage> {
             icon: Icon(
               Icons.shopify,
               size: 24.0,
+            ),
+            label: '__',
+            tooltip: '',
+          ),
+          BottomNavigationBarItem(
+            icon: FaIcon(
+              FontAwesomeIcons.wallet,
+              size: 20.0,
             ),
             label: '__',
             tooltip: '',

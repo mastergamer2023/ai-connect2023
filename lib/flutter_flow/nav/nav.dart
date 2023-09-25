@@ -169,16 +169,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'Dashboard',
               path: 'dashboard',
-              builder: (context, params) => params.isEmpty
-                  ? NavBarPage(initialPage: 'Dashboard')
-                  : DashboardWidget(),
+              builder: (context, params) => DashboardWidget(),
             ),
             FFRoute(
               name: 'ListoAffiliates',
               path: 'listoAffiliates',
-              builder: (context, params) => params.isEmpty
-                  ? NavBarPage(initialPage: 'ListoAffiliates')
-                  : ListoAffiliatesWidget(),
+              builder: (context, params) => ListoAffiliatesWidget(),
             ),
             FFRoute(
               name: 'ProfileDetails',
@@ -196,16 +192,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => SubscriptionWidget(),
             ),
             FFRoute(
-              name: 'blockchain',
-              path: 'blockchain',
-              builder: (context, params) => BlockchainWidget(),
-            ),
-            FFRoute(
-              name: 'Kiara',
-              path: 'kiara',
-              builder: (context, params) => KiaraWidget(),
-            ),
-            FFRoute(
               name: 'aiShop',
               path: 'aiShop',
               builder: (context, params) => params.isEmpty
@@ -218,14 +204,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => ListoLevel1Widget(),
             ),
             FFRoute(
-              name: 'Home15Travel',
-              path: 'home15Travel',
-              builder: (context, params) => Home15TravelWidget(),
-            ),
-            FFRoute(
               name: 'upload',
               path: 'upload',
               builder: (context, params) => UploadWidget(),
+            ),
+            FFRoute(
+              name: 'DashboardCopy',
+              path: 'dashboardCopy',
+              builder: (context, params) => params.isEmpty
+                  ? NavBarPage(initialPage: 'DashboardCopy')
+                  : DashboardCopyWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
