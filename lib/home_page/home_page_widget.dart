@@ -188,8 +188,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                 ),
                                 child: AuthUserStreamWidget(
                                   builder: (context) => Container(
-                                    width: 40.0,
-                                    height: 40.0,
+                                    width: 35.0,
+                                    height: 35.0,
                                     clipBehavior: Clip.antiAlias,
                                     decoration: BoxDecoration(
                                       shape: BoxShape.circle,
