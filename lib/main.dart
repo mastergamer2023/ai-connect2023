@@ -135,7 +135,7 @@ class _NavBarPageState extends State<NavBarPage> {
     final tabs = {
       'HomePage': HomePageWidget(),
       'aiShop': AiShopWidget(),
-      'DashboardCopy': DashboardCopyWidget(),
+      'Dashboard': DashboardWidget(),
       'profilePage': ProfilePageWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);

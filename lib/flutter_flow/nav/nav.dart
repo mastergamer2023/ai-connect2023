@@ -167,11 +167,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => LiveCSRWidget(),
             ),
             FFRoute(
-              name: 'Dashboard',
-              path: 'dashboard',
-              builder: (context, params) => DashboardWidget(),
-            ),
-            FFRoute(
               name: 'ListoAffiliates',
               path: 'listoAffiliates',
               builder: (context, params) => ListoAffiliatesWidget(),
@@ -187,11 +182,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               ),
             ),
             FFRoute(
-              name: 'Subscription',
-              path: 'subscription',
-              builder: (context, params) => SubscriptionWidget(),
-            ),
-            FFRoute(
               name: 'aiShop',
               path: 'aiShop',
               builder: (context, params) => params.isEmpty
@@ -199,21 +189,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                   : AiShopWidget(),
             ),
             FFRoute(
-              name: 'ListoLevel1',
-              path: 'listoLevel1',
-              builder: (context, params) => ListoLevel1Widget(),
-            ),
-            FFRoute(
               name: 'upload',
               path: 'upload',
               builder: (context, params) => UploadWidget(),
             ),
             FFRoute(
-              name: 'DashboardCopy',
-              path: 'dashboardCopy',
+              name: 'Dashboard',
+              path: 'dashboard',
               builder: (context, params) => params.isEmpty
-                  ? NavBarPage(initialPage: 'DashboardCopy')
-                  : DashboardCopyWidget(),
+                  ? NavBarPage(initialPage: 'Dashboard')
+                  : DashboardWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
