@@ -74,7 +74,7 @@ class _DashboardCopyWidgetState extends State<DashboardCopyWidget> {
                               content:
                                   'https://ai-connectworld.bixgrow.com/register',
                               bypass: false,
-                              height: 861.0,
+                              height: 872.0,
                               verticalScroll: false,
                               horizontalScroll: false,
                             ),

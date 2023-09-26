@@ -399,13 +399,13 @@ class FFRoute {
               ? isWeb
                   ? Container()
                   : Container(
-                      color: FlutterFlowTheme.of(context).primaryBackground,
+                      color: Color(0xFF060101),
                       child: Center(
                         child: Image.asset(
-                          'assets/images/Default_imagine_logo_mobile_app_AIconnect_a_Artificial_Intelli_1_7459ac8a-637e-4df8-ac6c-15cae9cd7b7b_0_(1).png',
-                          width: 200.0,
-                          height: 200.0,
-                          fit: BoxFit.contain,
+                          'assets/images/nen6x_x.gif',
+                          width: 250.0,
+                          height: 250.0,
+                          fit: BoxFit.cover,
                         ),
                       ),
                     )
