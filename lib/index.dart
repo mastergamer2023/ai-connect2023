@@ -6,8 +6,8 @@ export '/forgot_password/forgot_password_widget.dart' show ForgotPasswordWidget;
 export '/phone_sign_in/phone_sign_in_widget.dart' show PhoneSignInWidget;
 export '/phone_verify/phone_verify_widget.dart' show PhoneVerifyWidget;
 export '/profile_page/profile_page_widget.dart' show ProfilePageWidget;
-export '/home_page/home_page_widget.dart' show HomePageWidget;
 export '/details_app/details_app_widget.dart' show DetailsAppWidget;
+export '/home_page/home_page_widget.dart' show HomePageWidget;
 export '/a_imodels_details/a_imodels_details_widget.dart'
     show AImodelsDetailsWidget;
 export '/webview/webview_widget.dart' show WebviewWidget;

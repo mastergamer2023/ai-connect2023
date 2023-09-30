@@ -6,13 +6,14 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/random_data_util.dart' as random_data;
+import 'listo_affiliates_widget.dart' show ListoAffiliatesWidget;
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
 import 'package:provider/provider.dart';
 
-class ListoAffiliatesModel extends FlutterFlowModel {
+class ListoAffiliatesModel extends FlutterFlowModel<ListoAffiliatesWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();

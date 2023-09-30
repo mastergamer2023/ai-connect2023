@@ -52,7 +52,9 @@ class _ListoAffiliatesWidgetState extends State<ListoAffiliatesWidget>
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => FocusScope.of(context).requestFocus(_model.unfocusNode),
+      onTap: () => _model.unfocusNode.canRequestFocus
+          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
+          : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
@@ -334,9 +336,11 @@ class _ListoAffiliatesWidgetState extends State<ListoAffiliatesWidget>
                             builder: (context) => PagedListView<
                                 DocumentSnapshot<Object?>?, UsersRecord>(
                               pagingController: _model.setListViewController2(
-                                UsersRecord.collection.where('sponsor_id',
-                                    isEqualTo: valueOrDefault(
-                                        currentUserDocument?.refferralId, 0)),
+                                UsersRecord.collection.where(
+                                  'sponsor_id',
+                                  isEqualTo: valueOrDefault(
+                                      currentUserDocument?.refferralId, 0),
+                                ),
                               ),
                               padding: EdgeInsets.zero,
                               reverse: false,
